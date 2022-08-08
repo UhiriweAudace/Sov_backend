@@ -1,0 +1,25 @@
+type User {
+  name: String!
+  height: String
+  mass: String
+  gender: String
+  homeworld: String
+}
+
+type PageInfo {
+  totalCount: Int!
+}
+
+type UserResponse {
+  page_info: PageInfo
+  edges: [User]!
+}
+
+input UserFilter {
+  page: Int!
+}
+
+type Query {
+  users(where: UserFilter): UserResponse
+  search(keyword: String!): UserResponse
+}
