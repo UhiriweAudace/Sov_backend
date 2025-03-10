@@ -7,7 +7,7 @@ const prisma = new PrismaClient();
 //Stars wars api people endpoint
 const SWAPI_API_BASEURL = 'https://swapi.dev/api/people/';
 
-// Number of people per page
+// Number of people per page1
 const PEOPLE_PER_PAGE = 10;
 
 // Create User Data

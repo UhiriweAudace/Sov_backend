@@ -2,7 +2,7 @@ export interface IResponse {
   count: number;
   next: string;
   previous: null;
-  results: IUser[];
+  results: Array<IUser>;
 }
 
 export interface IUser {
@@ -15,10 +15,10 @@ export interface IUser {
   birth_year: string;
   gender: string;
   homeworld: string;
-  films: string[];
-  species: string[];
-  vehicles: string[];
-  starships: string[];
+  films: Array<string>;
+  species: Array<string>;
+  vehicles: Array<string>;
+  starships: Array<string>;
   created: string;
   edited: string;
   url: string;
